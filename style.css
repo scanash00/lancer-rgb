@@ -1,0 +1,20 @@
+/* SPDX-License-Identifier: GPL-2.0-or-later */
+.surface {
+  background: @card_bg_color;
+  border-radius: 12px;
+  padding: 16px;
+}
+.field-label { font-size: 12px; font-weight: 600; }
+.dim-label { opacity: .7; }
+.title-2 { font-size: 18px; font-weight: 700; }
+.heading { font-weight: 600; }
+.monospace { font-family: monospace; font-size: 12px; }
+.swatch { padding: 3px; min-height: 28px; min-width: 26px; background: transparent; border-radius: 8px; }
+.swatch:hover { background: alpha(@window_fg_color,.1); }
+entry { min-height: 32px; }
+spinbutton { min-height: 32px; font-variant-numeric: tabular-nums; }
+scale { padding: 8px 0; }
+scale trough { min-height: 6px; }
+.bottom-bar { padding: 0 8px; }
+.bottom-bar button { padding: 9px 16px; }
+.error { outline: 2px solid @error_color; }

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Lancer RGB
+Comment=Color controls for XPG Lancer Blade RGB memory
+Exec=/usr/bin/python3 /usr/local/share/lancer-rgb/lancer_gtk.py
+Icon=local.lancer.RGB
+Terminal=false
+Categories=Utility;GTK;
+StartupNotify=true

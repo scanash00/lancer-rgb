@@ -1,0 +1,16 @@
+[Unit]
+Description=Restore saved Lancer RAM lighting
+After=systemd-modules-load.service
+ConditionPathExists=/var/lib/lancer-rgb/settings.json
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 -I /usr/local/lib/lancer-rgb/lancer_service.py restore
+TimeoutStartSec=25
+NoNewPrivileges=yes
+ProtectSystem=strict
+ProtectHome=yes
+ReadWritePaths=/run/lock
+
+[Install]
+WantedBy=multi-user.target
